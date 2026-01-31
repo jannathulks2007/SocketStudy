@@ -52,8 +52,8 @@ Socket programming finds applications in various domains, including web developm
 3.	File Transfer Protocol: Protocols like FTP (File Transfer Protocol) utilize socket programming for transferring files between a client and a server.
 4.	Networked Games: Online multiplayer games rely on socket programming to facilitate communication between game clients and servers.
 5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
-```
-Algorithm:
+   
+## Algorithm:
 Server.py
 1.Import the socket module and create a socket object.
 2.Assign a port number and bind the socket to the port.
@@ -61,17 +61,17 @@ Server.py
 4.Accept client connections and display the client address.
 5.Send a message to the client and close the connection.
 
-Client.py
+## Client.py
 1.Import the socket module and create a socket object.
 2.Specify the port number and server IP address.
 3.Connect the client socket to the server.
 4.Receive data from the server and display the message.
 5.Close the client connection.
 
-Program:
-server.py
+## Program:
+## server.py
+```
 import socket             
-# next create a socket object 
 s = socket.socket()         
 print ("Socket successfully created")
 port = 12345                
@@ -85,17 +85,20 @@ while True:
   c.send('Thank you for connecting'.encode()) 
   # Close the connection with the client 
 c.close()
+```
 
-client.py
-import socket              
+## client.py
+```import socket              
 s = socket.socket()         
 port = 12345                
 s.connect(('127.0.0.1', port)) 
 print (s.recv(1024).decode())
 s.close()
 ```
-Output:
-<img width="1103" height="356" alt="Screenshot 2026-01-30 112325" src="https://github.com/user-attachments/assets/afe04a80-224c-4de6-bc33-ecad9f8952a5" />
+## Output:
+<img width="941" height="240" alt="Screenshot 2026-01-30 114712" src="https://github.com/user-attachments/assets/a60ebd42-ddae-445b-a4fd-4711f42ef7bc" />
+
+
 
 
 
