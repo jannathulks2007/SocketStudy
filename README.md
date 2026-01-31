@@ -55,18 +55,18 @@ Socket programming finds applications in various domains, including web developm
    
 ## Algorithm:
 Server.py
-1.Import the socket module and create a socket object.
-2.Assign a port number and bind the socket to the port.
-3.Set the socket to listening mode for incoming connections.
-4.Accept client connections and display the client address.
-5.Send a message to the client and close the connection.
+1.  Import the socket module and create a socket object.
+2.  Assign a port number and bind the socket to the port.
+3.  Set the socket to listening mode for incoming connections.
+4.  Accept client connections and display the client address.
+5.  Send a message to the client and close the connection.
 
-## Client.py
-1.Import the socket module and create a socket object.
-2.Specify the port number and server IP address.
-3.Connect the client socket to the server.
-4.Receive data from the server and display the message.
-5.Close the client connection.
+Client.py
+1.  Import the socket module and create a socket object.
+2.  Specify the port number and server IP address.
+3.  Connect the client socket to the server.
+4.  Receive data from the server and display the message.
+5.  Close the client connection.
 
 ## Program:
 ## server.py
